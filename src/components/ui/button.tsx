@@ -19,7 +19,7 @@ const buttonVariants = cva(
       },
       variant: {
         default:
-          'mx-2 min-w-[150px] rounded-full border border-[#0e0f11] bg-[#0e0f11] px-8 py-6 text-xs font-medium text-[#fbf4ef]',
+          'mx-2 min-w-[150px] rounded-full border border-[#0e0f11] bg-[#0e0f11] px-8 py-6 text-xs font-medium text-[#fbf4ef] font-poppins font-[550]',
         destructive:
           'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
@@ -27,7 +27,7 @@ const buttonVariants = cva(
         outline:
           'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
         secondary:
-          'mx-2 min-w-[150px] rounded-full border border-[#141516] bg-[#faf4ee] px-8 py-6 text-xs text-[#0e0f11]',
+          'mx-2 min-w-[150px] rounded-full border border-[#141516] bg-[#faf4ee] px-8 py-6 text-xs text-[#0e0f11] font-poppins font-[550]',
       },
     },
   }

@@ -1,22 +1,22 @@
-import {
-  Card as _Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { cn } from '@/lib/utils';
+import { Box } from '@radix-ui/themes';
+import { PropsWithChildren } from 'react';
 
-const Card = () => {
+interface CardProps extends PropsWithChildren {
+  className?: string;
+  color?: string;
+}
+
+const Card = ({ children, className, color = '#f7efe8' }: CardProps) => {
   return (
-    <_Card>
-      <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
-      </CardHeader>
-      <CardContent>Card Content</CardContent>
-      <CardFooter>Card Footer</CardFooter>
-    </_Card>
+    <Box
+      className={cn(
+        `bg-[${color}] my-4 flex w-full max-w-[940px] place-content-center rounded-xl text-center font-poppins`,
+        className
+      )}
+    >
+      {children}
+    </Box>
   );
 };
 
