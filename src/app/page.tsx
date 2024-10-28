@@ -1,3 +1,5 @@
+'use client';
+
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
@@ -6,12 +8,15 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Container } from '@radix-ui/themes';
 import { Box } from '@radix-ui/themes';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
+const Lottie = dynamic(() => import('react-lottie-player'), { ssr: false });
 
 const Home = () => {
   return (
     <Container className="overflow-x-hidden bg-[#faf4ee]">
       <Navbar />
+      <Box className="h-24"></Box>
       <Section>
         <Box className="mx-[110px] flex max-w-[720px] flex-col place-items-center py-6 text-center">
           <h1 className="text-7xl/[72px]">
@@ -44,7 +49,7 @@ const Home = () => {
             scale back on your professional fees.
           </p>
         </Box>
-        <Card>
+        <Card className="bg-[#f7efe8]">
           <Box className="flex max-w-[528px] flex-col place-items-center px-4 py-16">
             <Box>
               <Image
@@ -55,7 +60,11 @@ const Home = () => {
                 width={343}
               />
             </Box>
-            <Box>PLACEHOLDER</Box>
+            <Lottie
+              className="w-full"
+              path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e0c_typewritertext.json"
+              play
+            />
             <h2 className="my-6 text-xl/[32px] font-medium">
               Get it done with your AI Co-pilot
             </h2>
@@ -65,7 +74,7 @@ const Home = () => {
             </p>
           </Box>
         </Card>
-        <Card>
+        <Card className="bg-[#f7efe8]">
           <Box className="flex w-1/2 max-w-[528px] flex-col place-items-center px-12 py-16">
             <Image
               alt="logo"
@@ -84,23 +93,17 @@ const Home = () => {
             </p>
           </Box>
           <Box className="w-1/2">
-            <Image
-              alt="logo"
-              className="h-full w-full"
-              height={343}
-              src="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e05_temp_AI.png"
-              width={343}
+            <Lottie
+              path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e0b_ANIM_asset_workflow.json"
+              play
             />
           </Box>
         </Card>
-        <Card>
+        <Card className="bg-[#f7efe8]">
           <Box className="w-1/2">
-            <Image
-              alt="logo"
-              className="h-full w-full"
-              height={343}
-              src="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e05_temp_AI.png"
-              width={343}
+            <Lottie
+              path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e0a_ANIM_asset_decision.json"
+              play
             />
           </Box>
           <Box className="flex w-1/2 max-w-[528px] flex-col place-items-center px-12 py-16">
@@ -131,6 +134,11 @@ const Home = () => {
             company. Seamless assistance throughout your journey.
           </p>
         </Box>
+        <Lottie
+          path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/65fde568b3d496beae3da68a_timeline_animation_update.json"
+          play
+          speed={0.5}
+        />
       </Section>
       <Box className="my-16 flex place-content-center bg-white py-16">
         <Box className="flex max-w-[1400px] place-content-center gap-8">

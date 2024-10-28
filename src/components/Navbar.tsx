@@ -13,7 +13,11 @@ import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <Box maxHeight="96px">
+    <Box
+      className="fixed top-0 z-50 w-full bg-[#faf4ee] opacity-[.98]"
+      maxHeight="96px"
+      minHeight="96px"
+    >
       <Box className="flex h-full w-full place-content-center">
         <NavigationMenu className="m-8 min-w-[500px] max-w-[1400px] justify-between">
           <NavigationMenuLink>
