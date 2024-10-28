@@ -11,7 +11,7 @@ const Card = ({ children, className, color = '#f7efe8' }: CardProps) => {
   return (
     <Box
       className={cn(
-        `bg-[${color}] my-4 flex w-full max-w-[940px] place-content-center rounded-xl text-center font-poppins`,
+        `bg-[${color}] my-4 flex w-full max-w-[940px] flex-col place-content-center rounded-xl text-center font-poppins sm:flex-row`,
         className
       )}
     >

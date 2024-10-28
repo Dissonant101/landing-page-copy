@@ -5,9 +5,9 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <Container className="px-4 pt-16">
-      <Box className="flex w-full flex-col place-items-center">
-        <Box className="flex w-full min-w-[500px] max-w-[1400px] justify-between py-8 font-poppins">
-          <Box>
+      <Box className="flex w-full flex-col place-items-center text-center">
+        <Box className="flex w-full min-w-[500px] max-w-[1400px] flex-col place-items-center justify-between py-8 font-poppins sm:flex-row">
+          <Box className="mb-16">
             <Image
               alt="logo"
               className="min-h-[36px] min-w-[163px]"
@@ -16,21 +16,21 @@ const Footer = () => {
               width={163}
             />
           </Box>
-          <Box className="flex gap-16">
-            <Box className="flex flex-col gap-2">
-              <h2 className="text-lg/[30px] font-medium">Products</h2>
+          <Box className="flex flex-col gap-16 sm:flex-row">
+            <Box className="flex flex-col gap-2 sm:place-items-start">
+              <h2 className="text-lg/[30px] font-semibold">Products</h2>
               <p className="text-md">Cap Table Management</p>
               <p className="text-md">Planning & Forecasting</p>
               <p className="text-md">LP Automation</p>
             </Box>
-            <Box className="flex flex-col gap-2">
-              <h2 className="text-lg/[30px] font-medium">Solutions</h2>
+            <Box className="flex flex-col gap-2 sm:place-items-start">
+              <h2 className="text-lg/[30px] font-semibold">Solutions</h2>
               <p className="text-md">For Founders</p>
               <p className="text-md">For Limited Partners</p>
               <p className="text-md">For Law Firms</p>
             </Box>
-            <Box className="flex flex-col gap-2">
-              <h2 className="text-lg/[30px] font-medium">Resources</h2>
+            <Box className="flex flex-col gap-2 sm:place-items-start">
+              <h2 className="text-lg/[30px] font-semibold">Resources</h2>
               <p className="text-md">Migrate from Carta</p>
               <p className="text-md">Migrate from Pulley</p>
               <p className="text-md">Migrate from Shareworks</p>
@@ -38,11 +38,11 @@ const Footer = () => {
               <p className="text-md">Privacy Policy</p>
               <p className="text-md">Blog</p>
             </Box>
-            <Box className="flex flex-col gap-2">
-              <h2 className="text-lg/[30px] font-medium">Company</h2>
+            <Box className="flex flex-col place-items-center gap-2 sm:place-items-start">
+              <h2 className="text-lg/[30px] font-semibold">Company</h2>
               <p className="text-md">Our Team</p>
               <p className="text-md">Security</p>
-              <Box className="flex items-center gap-4">
+              <Box className="my-8 flex place-items-center gap-8 sm:my-2 sm:place-items-start">
                 <Image
                   alt="logo"
                   height={20}
@@ -66,7 +66,7 @@ const Footer = () => {
           </Box>
         </Box>
         <Separator className="min-w-[500px] max-w-[1400px]" />
-        <Box className="flex w-full min-w-[500px] max-w-[1400px] items-center justify-between py-16">
+        <Box className="flex w-full min-w-[500px] max-w-[1400px] flex-col items-center justify-between gap-16 py-16 sm:flex-row">
           <p className="text-md font-medium text-[#76777a]">
             © Remade by Steven Chen · <a href="">Terms of Use</a>
           </p>

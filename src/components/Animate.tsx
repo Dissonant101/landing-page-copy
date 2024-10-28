@@ -14,7 +14,12 @@ const Animate = ({ children, className, effect = 'fade-up' }: AnimateProps) => {
   }, []);
 
   return (
-    <div className={className} data-aos={effect} data-aos-once="true">
+    <div
+      className={className}
+      data-aos={effect}
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
       {children}
     </div>
   );
