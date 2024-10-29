@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <Container className="overflow-x-hidden bg-[#faf4ee]">
       <Navbar />
-      <Box className="h-24"></Box>
+      <Box className="h-20 md:h-24"></Box>
       <Section>
-        <Box className="flex flex-col place-items-center py-6 text-center sm:mx-[110px] sm:max-w-[720px]">
+        <Box className="flex flex-col place-items-center py-6 text-center md:mx-[110px] md:max-w-[720px]">
           <Animate>
             <h1 className="text-7xl/[72px]">
               Company ownership, from the future
@@ -32,7 +32,7 @@ const Home = () => {
           <Animate>
             <video
               autoPlay
-              className="pt-4 outline-none sm:w-full sm:max-w-[900px]"
+              className="pt-4 outline-none md:w-full md:max-w-[900px]"
               loop
               muted
             >
@@ -47,7 +47,7 @@ const Home = () => {
       </Section>
       <Section>
         <Animate>
-          <Box className="flex flex-col place-items-center text-center sm:max-w-[528px]">
+          <Box className="flex flex-col place-items-center text-center md:max-w-[528px]">
             <h1 className="text-5xl/[60px] font-medium">Manage like a pro</h1>
             <p className="my-6 text-lg">
               Take control of your ownership with a next-generation platform
@@ -61,7 +61,7 @@ const Home = () => {
         <Container maxWidth="528px">
           <Animate>
             <Card className="bg-[#f7efe8]">
-              <Box className="flex flex-col place-items-center py-16 sm:px-4">
+              <Box className="flex flex-col place-items-center py-16 md:px-4">
                 <Box>
                   <Image
                     alt="logo"
@@ -76,7 +76,7 @@ const Home = () => {
                   path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e0c_typewritertext.json"
                   play
                 />
-                <Container className="sm:max-w-[500px]">
+                <Container className="md:max-w-[500px]">
                   <h2 className="my-6 text-xl/[32px] font-semibold">
                     Get it done with your AI Co-pilot
                   </h2>
@@ -90,7 +90,7 @@ const Home = () => {
           </Animate>
           <Animate>
             <Card className="bg-[#f7efe8]">
-              <Box className="flex flex-col place-items-center py-16 sm:w-1/2 sm:px-12">
+              <Box className="flex flex-col place-items-center py-16 md:w-1/2 md:px-12">
                 <Image
                   alt="logo"
                   className="h-9 w-9"
@@ -108,7 +108,7 @@ const Home = () => {
                   hours.
                 </p>
               </Box>
-              <Box className="sm:w-1/2">
+              <Box className="md:w-1/2">
                 <Lottie
                   path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e0b_ANIM_asset_workflow.json"
                   play
@@ -117,8 +117,8 @@ const Home = () => {
             </Card>
           </Animate>
           <Animate>
-            <Card className="bg-[#f7efe8] sm:flex-row-reverse">
-              <Box className="flex flex-col place-items-center py-16 sm:w-1/2 sm:px-12">
+            <Card className="bg-[#f7efe8] md:flex-row-reverse">
+              <Box className="flex flex-col place-items-center py-16 md:w-1/2 md:px-12">
                 <Image
                   alt="logo"
                   className="h-9 w-9"
@@ -136,7 +136,7 @@ const Home = () => {
                   insight to make decisions.
                 </p>
               </Box>
-              <Box className="sm:w-1/2">
+              <Box className="md:w-1/2">
                 <Lottie
                   path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e0a_ANIM_asset_decision.json"
                   play
@@ -147,23 +147,37 @@ const Home = () => {
         </Container>
       </Section>
       <Section>
-        <Container className="sm:max-w-[400px]">
-          <Animate>
-            <h1 className="text-5xl/[60px] font-medium">Up and to the right</h1>
-            <p className="my-6 text-lg">
-              Support at every stage, from your garage to a thriving public
-              company. Seamless assistance throughout your journey.
-            </p>
-          </Animate>
+        <Container className="flex md:w-[940px]">
+          <Container className="md:max-w-[400px]">
+            <Animate>
+              <h1 className="text-5xl/[60px] font-medium">
+                Up and to the right
+              </h1>
+              <p className="my-6 text-lg">
+                Support at every stage, from your garage to a thriving public
+                company. Seamless assistance throughout your journey.
+              </p>
+            </Animate>
+          </Container>
         </Container>
-        <Lottie
-          path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/65fde568b3d496beae3da68a_timeline_animation_update.json"
-          play
-          speed={0.5}
-        />
+        <Box>
+          <Lottie
+            className="invisible md:visible"
+            path="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/65fde568b3d496beae3da68a_timeline_animation_update.json"
+            play
+            speed={0.5}
+          />
+          <Image
+            alt="logo"
+            className="visible md:invisible"
+            height={461}
+            src="https://cdn.prod.website-files.com/64b05c5307d994750a3d2dde/64b05c5307d994750a3d2e08_TimelineMobile.png"
+            width={844}
+          />
+        </Box>
       </Section>
       <Box className="my-16 flex place-content-center bg-white py-16">
-        <Box className="flex flex-col place-content-center gap-8 sm:max-w-[1400px] sm:flex-row">
+        <Box className="flex flex-col place-content-center gap-8 md:max-w-[1400px] md:flex-row">
           <Image
             alt="logo"
             className="h-[140px] w-[187px]"
@@ -195,7 +209,7 @@ const Home = () => {
         </Box>
       </Box>
       <Section>
-        <Box className="sm:max-w-[940px]">
+        <Box className="md:max-w-[940px]">
           <Animate>
             <h1 className="text-5xl/[60px] font-semibold">
               Manage everything in one place with simple, straightforward tools
@@ -204,7 +218,7 @@ const Home = () => {
           </Animate>
           <Separator className="my-16" />
           <Box className="flex flex-wrap gap-8">
-            <Box className="w-1/3 flex-auto sm:w-1/4">
+            <Box className="w-1/3 flex-auto md:w-1/4">
               <Animate>
                 <h2 className="text-lg/[30px] font-semibold">Fundraising</h2>
                 <p className="text-md my-4">
@@ -213,7 +227,7 @@ const Home = () => {
                 </p>
               </Animate>
             </Box>
-            <Box className="w-1/3 flex-auto sm:w-1/4">
+            <Box className="w-1/3 flex-auto md:w-1/4">
               <Animate>
                 <h2 className="text-lg/[30px] font-semibold">Cap Tables</h2>
                 <p className="text-md my-4">
@@ -222,7 +236,7 @@ const Home = () => {
                 </p>
               </Animate>
             </Box>
-            <Box className="w-1/3 flex-auto sm:w-1/4">
+            <Box className="w-1/3 flex-auto md:w-1/4">
               <Animate>
                 <h2 className="text-lg/[30px] font-semibold">
                   Planning and Forecasting
@@ -233,7 +247,7 @@ const Home = () => {
                 </p>
               </Animate>
             </Box>
-            <Box className="w-1/3 flex-auto sm:w-1/4">
+            <Box className="w-1/3 flex-auto md:w-1/4">
               <Animate>
                 <h2 className="text-lg/[30px] font-semibold">Issue Equity</h2>
                 <p className="text-md my-4">
@@ -242,7 +256,7 @@ const Home = () => {
                 </p>
               </Animate>
             </Box>
-            <Box className="w-1/3 flex-auto sm:w-1/4">
+            <Box className="w-1/3 flex-auto md:w-1/4">
               <Animate>
                 <h2 className="text-lg/[30px] font-semibold">
                   Automated Signing
@@ -253,7 +267,7 @@ const Home = () => {
                 </p>
               </Animate>
             </Box>
-            <Box className="w-1/3 flex-auto sm:w-1/4">
+            <Box className="w-1/3 flex-auto md:w-1/4">
               <Animate>
                 <h2 className="text-lg/[30px] font-semibold">Data Rooms</h2>
                 <p className="text-md my-4">
@@ -268,7 +282,7 @@ const Home = () => {
       </Section>
       <Section className="mb-24">
         <Card color="#0e0f11">
-          <Box className="flex flex-col place-items-center px-7 py-16 sm:px-32">
+          <Box className="flex flex-col place-items-center px-7 py-16 md:px-32">
             <h1 className="text-5xl/[60px] font-medium text-white">
               Get started for free
             </h1>
@@ -277,7 +291,7 @@ const Home = () => {
               Flat-rate paid plans start at $100 per month for unlimited
               stakeholders.
             </p>
-            <Box className="flex w-full flex-col place-items-center gap-4 sm:max-w-[150px] sm:flex-row sm:place-content-center">
+            <Box className="flex w-full flex-col place-items-center gap-4 md:max-w-[150px] md:flex-row md:place-content-center">
               <Button className="my-2 w-full flex-auto outline outline-1 outline-white">
                 SEE A DEMO
               </Button>
