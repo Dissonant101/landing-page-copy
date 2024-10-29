@@ -35,6 +35,7 @@ const Home = () => {
               className="pt-4 outline-none md:w-full md:max-w-[900px]"
               loop
               muted
+              style={{ clipPath: 'inset(1px 1px)' }}
             >
               <source
                 src="https://storage.googleapis.com/mantle-website-assets/videos/SpinningCircles.mp4"
