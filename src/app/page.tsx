@@ -32,7 +32,7 @@ const Home = () => {
           <Animate>
             <video
               autoPlay
-              className="pt-4 outline-none md:w-full md:max-w-[900px]"
+              className="pt-4 outline-none focus:outline-none md:w-full md:max-w-[900px]"
               loop
               muted
               style={{ clipPath: 'inset(1px 1px)' }}
@@ -149,7 +149,7 @@ const Home = () => {
       </Section>
       <Section>
         <Container className="flex md:w-[940px]">
-          <Container className="md:max-w-[400px]">
+          <Container className="max-w-[400px]">
             <Animate>
               <h1 className="text-5xl/[60px] font-medium">
                 Up and to the right
